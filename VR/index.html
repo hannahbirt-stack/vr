@@ -13,13 +13,18 @@
 
 <body>
 <a-scene>
-    <a-entity environment="preset:forest ; dressingAmount: 1900; skyColor:blue;seed:5"></a-entity>
+    <!--assets-->
+    <a-assets>
+ <img id=" " src="images/nameOfYourImage" preload="auto">
+</a-assets>
+
+    <a-entity environment="preset:forest; dressingAmount: 1900; skyColor:navy;seed:5"></a-entity>
 <!--museum start-->
-    <a-cylinder id="floor" position="0 0 0" radius="7.5" height="0.1" color="#3587A4"></a-cylinder>
-    <a-box id="wall" position="0 1.473 4.907" scale="10 3 0.1" src="#3587A4"></a-box>
-    <a-box id="wall2" position="0 1.473 -4.907" scale="10 3 0.1"src="#3587A4"></a-box>
-    <a-box id="wall3" position="5.049 1.454 -0.008" rotation="0 -90 0" scale="10 3 0.1"color="#3587A4"></a-box>
-    <a-box id="wall4" position=" -5.049 1.454 -0.008"rotation="0 -90 0" scale="10 3 0.1" color="#3587A4"></a-box>
+    <a-cylinder id="floor" position="0 0 0" radius="7.5" height="0.1" color="black"></a-cylinder>
+    <a-box id="wall" position="0 1.473 4.907" scale="10 3 0.1" color="black"></a-box>
+    <a-box id="wall2" position="0 1.473 -4.907" scale="10 3 0.1"color="black"></a-box>
+    <a-box id="wall3" position="5.049 1.454 -0.008" rotation="0 -90 0" scale="10 3 0.1"color="black"></a-box>
+    <a-box id="wall4" position=" -5.049 1.454 -0.008"rotation="0 -90 0" scale="10 3 0.1" color="black"></a-box>
     <!--roof-->
     <a-cylinder id="triangle_front" segments-radial="3" position="0 3.874 4.907" rotation="-90 0 0" scale="5.774 0.2 1.8" src="images/wall.jpg"></a-cylinder>
     <a-cylinder id="triangle_back" segments-radial="3" position="0 3.874 -4.907" rotation="-90 0 0" scale="5.774 0.2 1.8" src="images/wall.jpg"></a-cylinder>
