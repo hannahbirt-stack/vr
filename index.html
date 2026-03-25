@@ -14,27 +14,32 @@
 <body>
 <a-scene>
     <!--assets-->
-    <a-assets>
- <img id=" " src="images/nameOfYourImage" preload="auto">
+     <a-assets>
+
+        <img id="image1" src="images/image1.jpg" preload="auto">
+        <img id="image2" src="images/image2.jpg" preload="auto">
+      <img id="image3" src="images/image3.jpg" preload="auto">
 </a-assets>
 
-    <a-entity environment="preset:forest; dressingAmount: 1900; skyColor:navy;seed:5"></a-entity>
+    <a-entity environment="preset:moon; dressingAmount: 1900; skyColor:blue;seed:5"></a-entity>
 <!--museum start-->
-    <a-cylinder id="floor" position="0 0 0" radius="7.5" height="0.1" color="black"></a-cylinder>
-    <a-box id="wall" position="0 1.473 4.907" scale="10 3 0.1" color="black"></a-box>
-    <a-box id="wall2" position="0 1.473 -4.907" scale="10 3 0.1"color="black"></a-box>
-    <a-box id="wall3" position="5.049 1.454 -0.008" rotation="0 -90 0" scale="10 3 0.1"color="black"></a-box>
-    <a-box id="wall4" position=" -5.049 1.454 -0.008"rotation="0 -90 0" scale="10 3 0.1" color="black"></a-box>
+    <a-cylinder id="floor" position="0 0 0" radius="7.5" height="0.1" color="brown"></a-cylinder>
+    <a-box id="wall" position="0 1.473 4.907" scale="10 3 0.1" color="brown"></a-box>
+    <a-box id="wall2" position="0 1.473 -4.907" scale="10 3 0.1"color="brown"></a-box>
+    <a-box id="wall3" position="5.049 1.454 -0.008" rotation="0 -90 0" scale="10 3 0.1"scr="images/wall.jpg"></a-box>
+    <a-box id="wall4" position=" -5.049 1.454 -0.008"rotation="0 -90 0" scale="10 3 0.1" color="images/wall.jpg"></a-box>
     <!--roof-->
-    <a-cylinder id="triangle_front" segments-radial="3" position="0 3.874 4.907" rotation="-90 0 0" scale="5.774 0.2 1.8" src="images/wall.jpg"></a-cylinder>
+ <a-cylinder id="triangle_front" segments-radial="3" position="0 3.874 4.907" rotation="-90 0 0" scale="5.774 0.2 1.8" src="images/wall.jpg"></a-cylinder>
     <a-cylinder id="triangle_back" segments-radial="3" position="0 3.874 -4.907" rotation="-90 0 0" scale="5.774 0.2 1.8" src="images/wall.jpg"></a-cylinder>
     <a-box id="roof_right" position="2.580 4.328 0" rotation="28.433 90 0" scale="10.931 0.20 6.110" src="images/wall.jpg"></a-box>
     <a-box id="roof_right" position="2.580 4.328 0" rotation="28.433 90 0" scale="10.931 0.20 6.110" src="images/wall.jpg"></a-box>
     <a-box id="roof_left" position="-2.599 4.321 -0.017" rotation="28.433 -90 0" scale="10.931 0.20 6.130" src="images/wall.jpg"></a-box>
+   
 
+<a-plane id="image1" src="#image1" scale="2 2 0.05" rotation="0 0 0" position="2.736 1.934 -4.590"></a-plane>
+<a-plane id="image2" src="#image2" scale="2 2 0.05" rotation="0 0 0" position="-0.304 1.934 -4.590"></a-plane>
+<a-plane id="image3" src="#image3" scale="2 2 0.05" rotation="0 0 0" position="-3.033 1.940 -4.590"></a-plane>
 
-
-    
 </a-scene>
 </body>
 </html>
